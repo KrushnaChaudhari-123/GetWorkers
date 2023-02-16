@@ -14,9 +14,9 @@
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -91,6 +91,9 @@ include "menu.php"
 
 <?php
 include "right.php"
+?>
+<?php
+include "footer1.php"
 ?>
 
     </div> <!-- /page-in -->

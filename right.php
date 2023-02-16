@@ -43,7 +43,7 @@
                     <tr>
                       <td><label>
                         <select name="cmbUser" id="cmbUser">
-                          <option value="JobSeeker">JobSeeker</option>
+                          <option value="JobSeeker">Worker</option>
                           <option value="Employer" selected="selected">Employer</option>
                         </select>
                       </label></td>
@@ -66,7 +66,7 @@
                   <br>
                   <br>                  
 
-                  <div align="center"><a href="JobSeekerReg.php"><strong>New Job Seeker? <br> Register Here</strong></a>                  </div>
+                  <div align="center"><a href="JobSeekerReg.php"><strong>New Worker? <br> Register Here</strong></a>                  </div>
                 <p class="btn-more box noprint">&nbsp;</p>
           </div>
       </form>

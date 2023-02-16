@@ -12,12 +12,12 @@
 */
 
 * {min-height:1px;}
-body {border:0; margin:0; padding:0; background:#F2F5FE url("../design/bg.gif") 0 0 repeat-x; font:70%/160% "verdana",sans-serif; color:#192666; _text-align:center;}
+body {border:0; margin:0; padding:0; background:#fef2f6 url("../design/bg.gif") 0 0 repeat-x; font:70%/160% "verdana",sans-serif; color:#192666; _text-align:center;}
 
 a {color:#192666;}
 a:hover {color:#4F6AD7;}
 
-p {border:0; margin:15px 0; padding:0; line-height:30px;}
+p {border:0; margin:15px 0; padding:0;}
 
 div {display:block; border:0; margin:0; padding:0;}
 
@@ -28,10 +28,10 @@ h3 {font-size:120%; line-height:100%; font-weight:bold;}
 h4 {font-size:120%;}
 h5 {font-size:100%;}
 
-table {display:table;  margin:15px 0; padding:0; border:1px solid #B7CAF6; font-size:100%;}
+table {display:table; border-collapse:collapse; margin:15px 0; padding:0; border:1px solid #B7CAF6; font-size:100%;}
 tr {display:table-row;}
-th, td {display: table-cell; border:1px solid #B7CAF6; margin:0; padding:5px; vertical-align:top; text-align:left;}
-th {background:#E7ECFD; text-align:center; color:#192666; font-weight:bold;}
+th, td {display: table-cell; border:1px solid #4d6580; margin:0; padding:5px; vertical-align:top; text-align:left;}
+th {background:#fdefe7; text-align:center; color:#192666; font-weight:bold;}
 
 ul, ol {display:block; border:0; margin:15px 0 15px 40px; padding:0;}
 ol {list-style-type:decimal;}
@@ -79,7 +79,7 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
 #main {width:770px; margin:50px auto 0 auto; _text-align:left;}
 
 /* Header */
-#header {position:relative; width:770px; height:100px; margin:0; padding:0; background:#233C9B url("../design/header.jpg") 0 0 no-repeat; color:#FFF;}
+#header {position:relative; width:770px; height:100px; margin:0; padding:0; background:#233C9B url("../design/Header.jpg") 0 0 no-repeat; color:#FFF;}
 
     /* Header - logo */
     #header #logo {position:absolute; top:35px; left:35px; margin:0;}
@@ -161,7 +161,7 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
 /* Right column */
 #col {float:left; width:200px; margin:0; padding:0; background:#CEDBF9 url("../design/col_bg.gif") 0 0 repeat-y;}
 #col-in {padding:20px 10px; background:url("../design/col_top.gif") 0 0 no-repeat;}
-#col h3 {padding:13px 15px 14px 15px; margin:0 -10px 15px -10px; background:#A0B9F3 url("../design/col_title_bg.gif") 0 0 repeat-y; color:#192666;}
+#col h3 {padding:13px 15px 14px 15px; margin:0 -10px 15px -10px; background:#0fd423 url("../design/col_title_bg.gif") 0 0 repeat-y; color:#b10f45;}
 
     /* Right column - About me */
     #col #about-me {margin-bottom:15px; line-height:130%;}
@@ -218,101 +218,3 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
 	width: 174px;
 }
     #createdby a {color:#8CA3D8;}
-.login input[type="text"]
-{
-	background-color:#FFFFCC;
-	height:22px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#003366;
-}
-.login input[type="text"]:hover
-{
-	background-color:#003366;
-	height:22px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#FFFFFF;
-}
-.login input[type="password"]
-{
-	background-color:#FFFFCC;
-	height:22px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-}
-.login input[type="password"]:hover
-{
-	background-color:#003366;
-	height:22px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#FFFFFF;
-}
-.login input[type="submit"]
-{
-	background-color:#FFFFCC;
-	height:22px;
-	width:100px;
-	border:1px solid #003366;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#003366;
-}
-.login input[type="submit"]:hover
-{
-	background-color:#003366;
-	height:22px;
-	width:100px;
-	border:1px solid #003366;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#FFFFFF;
-}
-.login select
-{
-	background-color:#FFFFCC;
-	height:25px;
-	width:160px;
-	border:1px solid #003366;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#003366;
-}
-.login textarea
-{
-	background-color:#FFFFCC;
-	height:45px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#003366;
-}
-.login textarea:hover
-{
-	background-color:#003366;
-	height:45px;
-	width:160px;
-	border:1px solid black;
-	font-size:12px;
-	font-weight:bold;
-	border-radius:5px 0px 5px 0px;
-	color:#FFFFFF;
-}

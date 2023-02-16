@@ -9,14 +9,14 @@
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-<title>Job Portal</title>
+<title>Get Worker</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -140,42 +140,42 @@ include "menu.php"
                       <td>Contact Person:</td>
                       <td><span id="sprytextfield8">
                         <label>
-                        <input type="text" name="txtPerson" id="txtPerson" />
+                        <input type="text" name="txtPerson" id="txtPerson" placeholder="Enter Contact Person"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Contact Person</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                    
                     <tr>
                       <td>City:</td>
                       <td><span id="sprytextfield4">
                         <label>
-                        <input type="text" name="txtCity" id="txtCity" />
+                        <input type="text" name="txtCity" id="txtCity" placeholder="Enter City"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter City</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                    
                     <tr>
                       <td>Mobile:</td>
                       <td><span id="sprytextfield6">
                         <label>
-                        <input type="text" name="txtMobile" id="txtMobile" />
+                        <input type="text" name="txtMobile" id="txtMobile" placeholder="Enter Mobile"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Mobile</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                   
                     <tr>
                       <td>User Name:</td>
                     <td><span id="sprytextfield9">
                         <label>
-                        <input type="text" name="txtUserName" id="txtUserName" />
+                        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter User Name</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                     <tr>
                       <td>Password:</td>
                       <td><label><span id="sprytextfield10">
-                        <input type="password" name="txtPassword" id="txtPassword" />
-                      <span class="textfieldRequiredMsg">Enter Password</span></span></label></td>
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Enter Password"/>
+                      <span class="textfieldRequiredMsg"></span></span></label></td>
                     </tr>
                     <tr>
                       <td>Security Question:</td>
@@ -189,9 +189,9 @@ include "menu.php"
                       <td>Answer:</td>
                      <td><span id="sprytextfield11">
                       <label>
-                      <input type="text" name="txtAnswer" id="txtAnswer" />
+                      <input type="text" name="txtAnswer" id="txtAnswer" placeholder="Enter Answer"/>
                       </label>
-                      <span class="textfieldRequiredMsg">Enter Answer.</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                     <tr>
                       <td colspan="2"><label>
@@ -235,5 +235,8 @@ var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10");
 var sprytextfield11 = new Spry.Widget.ValidationTextField("sprytextfield11");
 //-->
 </script>
+<?php 
+include "footer1.php"
+?> 
 </body>
 </html>

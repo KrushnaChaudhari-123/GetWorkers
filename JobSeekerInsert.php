@@ -11,7 +11,7 @@
 	$Name=$_POST['txtName'];
 	$City=$_POST['txtCity'];
 	$Mobile=$_POST['txtMobile'];
-	$Gender=$_POST['cmbGender'];	
+	$WorkType=$_POST['WorkType'];	
 	$BirthDate=$_POST['txtBirthDate'];
 	$UserName=$_POST['txtUserName'];
 	$Password=$_POST['txtPassword'];
@@ -27,8 +27,8 @@
 //'".$Name."','".$Address."','".$City."','".$Email."',".$Mobile.",'".$Qualification."','".$Gender."',
 //'".$BirthDate."','".$path1."','".$Status."','".$UserName."','".$Password."','".$Question."','".$Answer."')";
 
-$sql="insert into jobSeeker_reg(JobSeekerName,City,Mobile,Gender,BirthDate,UserName,Password,Question,Answer) VALUES (
-'$Name','$City','$Mobile','$Gender','$BirthDate','$UserName','$Password','$Question','$Answer'
+$sql="insert into jobSeeker_reg(JobSeekerName,City,Mobile,WorkType,BirthDate,UserName,Password,Question,Answer) VALUES (
+'$Name','$City','$Mobile','$WorkType','$BirthDate','$UserName','$Password','$Question','$Answer'
 
 )";
 	// execute query

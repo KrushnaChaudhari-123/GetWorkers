@@ -9,14 +9,14 @@
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-<title>JOB PORTAL</title>
+<title>Get Worker</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -45,9 +45,7 @@ include "menu.php"
             <!-- RSS feeds -->
             <hr class="noscreen" />
 
-            <!-- Breadcrumbs -->
-            <p id="breadcrumbs">You are here: <a href="index.php">Home</a></p>
-          <hr class="noscreen" />
+           
             
         </div> <!-- /strip -->
 
@@ -72,7 +70,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome To JOB PORTAL</a></span></h2>
+                <h2><span><a href="#">Welcome To Get Worker</a></span></h2>
                
 
                 <form id="form2" method="post" action="ForPass.php">
@@ -86,7 +84,7 @@ include "menu.php"
                         <br />
                         <label>
                           <input type="radio" name="rdUser" value="JobSeeker" id="rdUser_1" />
-                          JobSeeker</label>
+                          Worker</label>
                         <br />
                       </p></td>
                     </tr>
@@ -139,7 +137,7 @@ include "right.php"
 
  
 <?php
-include "footer.php"
+include "footer1.php"
 ?>
 </div> <!-- /main -->
 

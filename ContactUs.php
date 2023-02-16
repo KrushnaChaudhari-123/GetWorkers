@@ -14,9 +14,9 @@
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -80,14 +80,15 @@ include "menu.php"
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td width="6%"><img src="design/ico_archive2.gif" alt="" width="9" height="11" /></td>
-                    <td width="94%"><strong> www.getworkers.com<br/>
-                    Pune,<br/>
+                    <td width="94%"><strong> www.getworkers.com<br><br>
+                    Address:-<br>
+                    Pune,<br>
                     Maharashtra<br/>
                     Pincode:435103</strong></td>
                   </tr>
                   <tr>
                     <td><img src="design/ico_archive2.gif" alt="" width="9" height="11" /></td>
-					<td><strong>Office No: 9689843553<b>
+					<td><strong>Office No: 9689843553<br><br>
 					Mobile: 7350478708
 					</strong></td>
 					
@@ -110,6 +111,9 @@ include "menu.php"
 
 <?php
 include "right.php"
+?>
+<?php
+include "footer1.php"
 ?>
 
     </div> <!-- /page-in -->

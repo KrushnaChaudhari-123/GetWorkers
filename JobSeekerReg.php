@@ -14,9 +14,9 @@
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -376,7 +376,7 @@ var arrFormValidation=
 		"Please Enter valid Mobile "
 						  ] 	  
                    ],
-				   [//Gender
+				   [//Work Type
 						  
 						  
                    ],
@@ -421,6 +421,7 @@ include "Header.php"
 <?php 
 include "menu.php"
 ?>   
+
 <!-- Page (2 columns) -->
     <div id="page" class="box">
     <div id="page-in" class="box">
@@ -457,7 +458,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Job Seeker Registration Form</a></span></h2>
+                <h2><span><a href="#">Worker Registration Form</a></span></h2>
                
 
                     <div class="login">
@@ -465,38 +466,41 @@ include "menu.php"
                 <form action="JobSeekerInsert.php" method="post" onSubmit="return validateForm(this,arrFormValidation);" enctype="multipart/form-data" id="form2">
                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
-                      <td>JobSeeker Name:</td>
+                      <td>Worker Name:</td>
                       <td><span id="sprytextfield3">
                         <label>
-                        <input type="text" name="txtName" id="txtName" />
+                        <input type="text" name="txtName" id="txtName" placeholder="Enter Name" />
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Name</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                   
                     <tr>
                       <td>City:</td>
                       <td><span id="sprytextfield4">
                         <label>
-                        <input type="text" name="txtCity" id="txtCity" />
+                        <input type="text" name="txtCity" id="txtCity" placeholder="Enter City" />
                         </label>
-                      <span class="textfieldRequiredMsg">Enter City</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                    
                     <tr>
                       <td>Mobile:</td>
                       <td><span id="sprytextfield6">
                         <label>
-                        <input type="text" name="txtMobile" id="txtMobile" />
+                        <input type="text" name="txtMobile" id="txtMobile" placeholder="Enter Mobile"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Mobile</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                    
                     <tr>
-                      <td>Gender:</td>
+                      <td>Work Type:</td>
                       <td><label>
-                        <select name="cmbGender" id="cmbGender">
-                          <option value="Male">Male</option>
-                          <option value="Female">Female</option>
+                        <select name="WorkType" id="WorkType">
+                          <option value="Construction">Construction</option>
+                          <option value="Plumbing">Plumbing</option>
+						  <option value="Electrician">Electrician</option>
+                          <option value="Labour">Labour</option>
+
                         </select>
                       </label></td>
                     </tr>
@@ -504,24 +508,24 @@ include "menu.php"
                       <td>BirthDate:</td>
                       <td><span id="sprytextfield7">
                         <label>
-                        <input type="text" name="txtBirthDate" onclick="ds_sh(this);" id="txtBirthDate" />
+                        <input type="text" name="txtBirthDate" onclick="ds_sh(this);" id="txtBirthDate" placeholder="Enter Birth Date"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Birth Date</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                 
                     <tr>
                       <td>User Name:</td>
                     <td><span id="sprytextfield8">
                         <label>
-                        <input type="text" name="txtUserName" id="txtUserName" />
+                        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter User Name</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                     <tr>
                       <td>Password:</td>
                       <td><label><span id="sprytextfield9">
-                        <input type="password" name="txtPassword" id="txtPassword" />
-                      <span class="textfieldRequiredMsg">Enter Password</span></span></label></td>
+                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Enter Password"/>
+                      <span class="textfieldRequiredMsg"></span></span></label></td>
                     </tr>
                     <tr>
                       <td>Security Question:</td>
@@ -537,9 +541,9 @@ include "menu.php"
                       <td>Answer:</td>
                       <td><span id="sprytextfield10">
                         <label>
-                        <input type="text" name="txtAnswer" id="txtAnswer" />
+                        <input type="text" name="txtAnswer" id="txtAnswer" placeholder="Enter Answer"/>
                         </label>
-                      <span class="textfieldRequiredMsg">Enter Answer.</span></span></td>
+                      <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                     <tr>
                       <td colspan="2"><label>
@@ -582,5 +586,8 @@ var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9");
 var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10");
 //-->
 </script>
+<?php 
+include "footer1.php"
+?> 
 </body>
 </html>

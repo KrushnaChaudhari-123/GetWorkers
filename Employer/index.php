@@ -20,14 +20,14 @@ else{
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-    <title>JOB PORTAL</title>
+    <title>GET WORKERS</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/main2a.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -39,6 +39,7 @@ else{
 </head>
 
 <body id="www-url-cz">
+
 <!-- Main -->
 <div id="main" class="box">
 <?php 
@@ -83,31 +84,74 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome To Control Panel</a></span></h2>
+           
+            <!-- Article -->
+            <div class="article">
+                <h2><span><a href="#">Our Registered Workers</a></span></h2>
                
 
-                <table width="100%" border="0">
-                  <tr>
-                    <td><div align="center"><img src="design/Home.png" alt="" width="64" height="64" /></div></td>
-                    <td><div align="center"><img src="design/Profile.png" alt="" width="64" height="64" /></div></td>
-                    <td><div align="center"><img src="design/Search.png" alt="" width="64" height="64" /></div></td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="index.php"><strong>Home</strong></a></div></td>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="Profile.php"><strong>Profile</strong></a></div></td>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="ManageJob.php"><strong>Manage JOB</strong></a></div></td>
-                  </tr>
-                  <tr>
-                    <td><div align="center"><img src="design/Interview.png" alt="" width="64" height="64" /></div></td>
-                    <td><div align="center"><img src="design/Feedback.png" alt="" width="64" height="64" /></div></td>
-                    <td><div align="center"><img src="design/Log.png" alt="" width="64" height="64" /></div></td>
-                  </tr>
-                  <tr>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="ManageWalkin.php"><strong>Walkin</strong></a></div></td>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="Application.php"><strong>Application</strong></a></div></td>
-                    <td bgcolor="#A0B9F3"><div align="center"><a href="logout.php"><strong>Logout</strong></a></div></td>
-                  </tr>
-                </table>
+                <p>
+                <table width="100%" border="1" cellpadding="1" cellspacing="2" bordercolor="#006699" >
+<tr>
+<th height="32" bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Worker Name</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>City</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Mobile Number</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>WorkType</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Experience</strong></div></th>
+</tr>
+<?php
+// Establish Connection with Database
+$con = mysqli_connect("localhost","root","","job");
+// Select Database
+//mysqli_select_db("job", $con);
+// Specify the query to execute
+$sql = "select * from jobseeker_reg ";
+// Execute query
+
+
+
+$result = mysqli_query($con,$sql);
+
+
+//var_dump($result);
+
+// Loop through each records
+while($row = mysqli_fetch_array($result))
+{
+$Name=$row['JobSeekerName'];
+$City=$row['City'];
+$Mobile=$row['Mobile'];
+$WorkType=$row['WorkType'];
+$Experience=$row['Experience'];
+
+
+?>
+<tr>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Name;?></strong></div></td>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $City;?></strong></div></td>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Mobile;?></strong></div></td>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $WorkType;?></strong></div></td>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Experience;?></strong></div></td>
+</tr>
+<?php
+}
+// Retrieve Number of records returned
+$records = mysqli_num_rows($result);
+?>
+
+<?php
+// Close the connection
+mysqli_close($con);
+?>
+
+
+</table>
+    </td>
+  </tr>
+</table>
+
+           
+                  
                 <p>&nbsp;</p>
 
               <p class="btn-more box noprint">&nbsp;</p>
@@ -117,16 +161,14 @@ include "menu.php"
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
+
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
 
  
 <?php
-include "footer.php"
+include "footer1.php"
 ?>
 </div> <!-- /main -->
 

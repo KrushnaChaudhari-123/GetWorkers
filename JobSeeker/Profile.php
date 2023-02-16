@@ -17,22 +17,23 @@ if(isset($_SESSION['$UserName_job'])){
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-    <title>JOB PORTAL</title>
+    <title>GET WORKERS</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css3/main3.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
-<!--
+
 .style1 {
 	color: #000066;
 	font-weight: bold;
 }
--->
-    </style>
+
+
+</style>
 </head>
 
 <body id="www-url-cz">
@@ -93,48 +94,50 @@ $result = mysqli_query($con,$sql);
 // Loop through each records 
 $row = mysqli_fetch_array($result)
 ?>
-                <table width="100%" border="1" cellspacing="2" cellpadding="2">
-                  <tr>
+                <div class="table" align="center" >
+                <table  width="80%" border='1' cellspacing="2" cellpadding="2">
+                <tr >
+                    <td><strong>Worker ID:</strong></td>
+                    <td><?php echo $row['JobSeekId'];?></td>
+                  </tr>  
+                <tr>
                     <td><strong>Name:</strong></td>
                     <td><?php echo $row['JobSeekerName'];?></td>
                   </tr>
-                  <tr>
-                    <td><strong>Address:</strong></td>
-                    <td><?php echo $row['Address'];?></td>
-                  </tr>
+               
                   <tr>
                     <td><strong>City:</strong></td>
                     <td><?php echo $row['City'];?></td>
                   </tr>
-                  <tr>
-                    <td><strong>Email:</strong></td>
-                    <td><?php echo $row['Email'];?></td>
-                  </tr>
+                
                   <tr>
                     <td><strong>Mobile:</strong></td>
                     <td><?php echo $row['Mobile'];?></td>
                   </tr>
+                
                   <tr>
-                    <td><strong>Highest Qualification:</strong></td>
-                    <td><?php echo $row['Qualification'];?></td>
+                    <td><strong>WorkType:</strong></td>
+                    <td><?php echo $row['WorkType'];?></td>
                   </tr>
                   <tr>
-                    <td><strong>Gender:</strong></td>
-                    <td><?php echo $row['Gender'];?></td>
+                    <td><strong>Experience:</strong></td>
+                    <td><?php echo $row['Experience'];?></td>
                   </tr>
                   <tr>
                     <td><strong>Birth Date:</strong></td>
                     <td><?php echo $row['BirthDate'];?></td>
                   </tr>
                   <tr>
-                    <td><strong>Resume:</strong></td>
-                    <td><a href="../upload/<?php echo $row['Resume'];?>" target="_blank"><strong>View</strong></a></td>
+                    <td><strong>Update Profile:</strong></td>              
+                    <td><a href="EditProfileWorker.php?JobSeekId=<?php echo $row['JobSeekId']; ?>" class="article" >Edit Profile</a></td>
                   </tr>
                   <tr>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                   </tr>
                 </table>
+                </div>
+               
               <p>&nbsp;</p>
 
                 <p class="btn-more box noprint">&nbsp;</p>
@@ -148,16 +151,12 @@ $row = mysqli_fetch_array($result)
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
-
     </div> <!-- /page-in -->
     </div> <!-- /page -->
 
  
 <?php
-include "footer.php"
+include "footer1.php"
 ?>
 </div> <!-- /main -->
 

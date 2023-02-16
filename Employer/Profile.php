@@ -23,9 +23,9 @@ else{
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/main2a.css" />
+    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -82,7 +82,7 @@ include "menu.php"
             <!-- Article -->
             <div class="article">
                 <h2><span><a href="#">Welcome <?php echo $_SESSION['$UserName_emp'];?></a></span></h2>
-               <?php
+<?php
 $ID=$_SESSION['ID'];
 // Establish Connection with Database
 $con = mysqli_connect("localhost","root","","job");
@@ -136,16 +136,14 @@ $row = mysqli_fetch_array($result)
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
+
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
 
  
 <?php
-include "footer.php"
+include "footer1.php"
 ?>
 </div> <!-- /main -->
 
