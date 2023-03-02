@@ -14,12 +14,13 @@ $txtMobile = $_POST['txtMobile'];
 $txtExperience = $_POST['txtExperience'];
 $txtUser=$_POST['txtUser'];
 $txtPassword=$_POST['txtPassword'];
+$txtAvailability=$_POST['availability'];
 // Establish Connection with MYSQL
 $con = mysqli_connect("localhost","root","","job");
 // Select Database
 
 // Specify the query to Update Record
-$sql = "Update jobseeker_reg  set JobSeekerName='".$txtContact."',City='".$txtCity."',Experience='".$txtExperience."',Mobile='".$txtMobile."',Password='".$txtPassword."' where JobSeekId=".$txtId."";
+$sql = "Update jobseeker_reg  set JobSeekerName='".$txtContact."',City='".$txtCity."',Experience='".$txtExperience."',Mobile='".$txtMobile."',Availability='".$txtAvailability."',Password='".$txtPassword."' where JobSeekId=".$txtId."";
 // Execute query
 mysqli_query($con,$sql);
 // Close The Connection

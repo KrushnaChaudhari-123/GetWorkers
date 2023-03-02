@@ -9,7 +9,7 @@
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-    <title>Welcome To Job Portal</title>
+    <title>Welcome To Get Worker</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     

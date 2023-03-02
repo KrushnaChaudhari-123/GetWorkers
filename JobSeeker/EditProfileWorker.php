@@ -158,6 +158,16 @@ $row = mysqli_fetch_array($result)
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>
+                  <tr>
+                    <td><strong>Availability:</strong></td>
+                    <td><span id="sprytextfield9">
+                    <label>
+                    Yes <input type="radio" name="availability" value="Yes" />
+                    No <input type="radio" name="availability" value="No" />
+                    </label>
+
+                    <span class="textfieldRequiredMsg">A value is required.</span></span></td>
+                  </tr>
                   
                   <tr>
                     <td>&nbsp;</td>

@@ -114,6 +114,11 @@ $row = mysqli_fetch_array($result)
                     <td><strong>Mobile:</strong></td>
                     <td><?php echo $row['Mobile'];?></td>
                   </tr>
+
+                  <tr>
+                    <td><strong>Birth Date:</strong></td>
+                    <td><?php echo $row['BirthDate'];?></td>
+                  </tr> 
                 
                   <tr>
                     <td><strong>WorkType:</strong></td>
@@ -123,19 +128,19 @@ $row = mysqli_fetch_array($result)
                     <td><strong>Experience:</strong></td>
                     <td><?php echo $row['Experience'];?></td>
                   </tr>
+                  
                   <tr>
-                    <td><strong>Birth Date:</strong></td>
-                    <td><?php echo $row['BirthDate'];?></td>
+                    <td><strong>Availibility</strong></td>
+                    <td><?php echo $row['Availability'];?></td>
                   </tr>
-                  <tr>
-                    <td><strong>Update Profile:</strong></td>              
-                    <td><a href="EditProfileWorker.php?JobSeekId=<?php echo $row['JobSeekId']; ?>" class="article" >Edit Profile</a></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                  </tr>
+
+                                             
                 </table>
+              
+                <tr>
+                    <td><strong></strong></td>              
+                    <td><a href="EditProfileWorker.php?JobSeekId=<?php echo $row['JobSeekId']; ?>" class="article" ><h3> Edit Profile</h3></a></td>
+                  </tr>
                 </div>
                
               <p>&nbsp;</p>

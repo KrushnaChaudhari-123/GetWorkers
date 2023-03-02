@@ -235,6 +235,7 @@ var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10");
 var sprytextfield11 = new Spry.Widget.ValidationTextField("sprytextfield11");
 //-->
 </script>
+
 <?php 
 include "footer1.php"
 ?> 

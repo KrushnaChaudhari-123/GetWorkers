@@ -87,7 +87,7 @@ include "menu.php"
            
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Our Registered Workers</a></span></h2>
+                <h2><span><a>Our Registered Workers</a></span></h2>
                
 
                 <p>
@@ -98,15 +98,12 @@ include "menu.php"
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Mobile Number</strong></div></th>
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>WorkType</strong></div></th>
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Experience</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Available</strong></div></th>
 </tr>
 <?php
-// Establish Connection with Database
 $con = mysqli_connect("localhost","root","","job");
-// Select Database
-//mysqli_select_db("job", $con);
-// Specify the query to execute
-$sql = "select * from jobseeker_reg ";
-// Execute query
+$sql = "select * from jobseeker_reg where Availability = 'Yes'";
+
 
 
 
@@ -123,6 +120,7 @@ $City=$row['City'];
 $Mobile=$row['Mobile'];
 $WorkType=$row['WorkType'];
 $Experience=$row['Experience'];
+$Availability=$row['Availability'];
 
 
 ?>
@@ -132,6 +130,7 @@ $Experience=$row['Experience'];
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Mobile;?></strong></div></td>
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $WorkType;?></strong></div></td>
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Experience;?></strong></div></td>
+<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Availability;?></strong></div></td>
 </tr>
 <?php
 }

@@ -18,7 +18,7 @@ else{
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-    <title>Hamro JOB.COM</title>
+    <title>GetWorker.COM</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
@@ -81,7 +81,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome <?php echo $_SESSION['$UserName_emp'];?></a></span></h2>
+                <h2><span><a >Welcome <?php echo $_SESSION['$UserName_emp'];?></a></span></h2>
 <?php
 $ID=$_SESSION['ID'];
 // Establish Connection with Database
@@ -119,11 +119,14 @@ $row = mysqli_fetch_array($result)
                     <td><?php echo $row['UserName'];?></td>
                   </tr>
                   
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><a href="EditProfile.php?EmployerId=<?php echo $row['EmployerId']; ?>">Edit Profile</a></td>
-                  </tr>
+                  
                 </table>
+
+                <tr>
+                    <td>&nbsp;</td>
+                    <td><a href="EditProfile.php?EmployerId=<?php echo $row['EmployerId']; ?>"><h3>Edit Profile</h3></a></td>
+                  </tr>
+
                 <?php
                 mysqli_close($con);
                 ?>

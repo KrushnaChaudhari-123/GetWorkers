@@ -7,15 +7,19 @@
   <title>Document</title>
   <style>
       footer {
-  background-color: #222;
+
+  background-color:#8FB3DE;
   color: #fff;
-  padding: 60px 0;
+  width:767px;
+  padding: 30px 0;
   height:170px;
 }
 
 .container {
   max-width: 960px;
   margin: 0 auto;
+  margin-top:px;
+
 }
 
 .footer-content {
@@ -31,11 +35,14 @@
 
 .contact-info h3, .social-links h3 {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color:black;
 }
 
 .contact-info p {
   margin: 0 15px 10px;
+  color:black;
+
 }
 
 .social-links ul {
@@ -49,6 +56,7 @@
 .footer-bottom {
  margin-left:230px;
   margin-top: 15px;
+  color:black;
 }
 
 .footer-bottom p {
@@ -64,7 +72,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="logo">
-        <!-- <p align="left"> <img src="design/work.jpg" alt="" width="255" height="300px" /></p> -->
+
           <img src=design/work.jpg alt="Example Company">
         </div>
         <div class="contact-info">

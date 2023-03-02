@@ -16,14 +16,14 @@ if (!isset($_SESSION))
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-<title>JOB PORTAL</title>
+<title>Get Worker</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/main2a.css" />
+   <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.cass" /> -->
+    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
     <style type="text/css">
 <!--
 .style1 {
@@ -83,7 +83,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome <?php echo $_SESSION['Name'];?></a></span></h2>
+                <h2><span><a>Welcome </a></span></h2>
                <?php
 $ID=$_SESSION['ID'];
 // Establish Connection with Database
@@ -168,16 +168,14 @@ $row = mysqli_fetch_array($result)
             
         </div> <!-- /content -->
 
-<?php
-include "right.php"
-?>
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
 
  
+
 <?php
-include "footer.php"
+include "footer1.php"
 ?>
 </div> <!-- /main -->
 

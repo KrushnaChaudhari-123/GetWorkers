@@ -103,6 +103,9 @@ include "menu.php"
 <?php
 include "right.php"
 ?>
+<?php
+include "footer1.php"
+?>
 
     </div> <!-- /page-in -->
     </div> <!-- /page -->
