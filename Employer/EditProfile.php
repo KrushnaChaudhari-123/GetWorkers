@@ -21,9 +21,8 @@ if (!isset($_SESSION))
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/main2a.css" />
-   <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.cass" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/EmployerProfile2.css" />
+   
     <style type="text/css">
 <!--
 .style1 {
@@ -83,7 +82,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a>Welcome </a></span></h2>
+               
                <?php
 $ID=$_SESSION['ID'];
 // Establish Connection with Database
@@ -106,12 +105,11 @@ $row = mysqli_fetch_array($result)
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>
-                  
                   <tr>
                     <td><strong>Contact Person:</strong></td>
                     <td><span id="sprytextfield3">
                       <label>
-                      <input name="txtContact" type="text" id="txtContact" value="<?php echo $row['ContactPerson'];?>" />
+                      <input name="txtContact" type="text" id="txtContact" value="<?php echo $row['ContactPerson'];?>" pattern="[A-Za-z ]+" required />
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>
@@ -120,7 +118,7 @@ $row = mysqli_fetch_array($result)
                     <td><strong>City:</strong></td>
                     <td><span id="sprytextfield4">
                       <label>
-                      <input name="txtCity" type="text" id="txtCity" value="<?php echo $row['City'];?>" />
+                      <input name="txtCity" type="text" id="txtCity" value="<?php echo $row['City'];?>" pattern="[A-Za-z ]+" required />
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>
@@ -129,7 +127,7 @@ $row = mysqli_fetch_array($result)
                     <td><strong>Mobile:</strong></td>
                     <td><span id="sprytextfield6">
                       <label>
-                      <input name="txtMobile" type="text" id="txtMobile" value="<?php echo $row['Mobile'];?>" />
+                      <input name="txtMobile" type="text" id="txtMobile" value="<?php echo $row['Mobile'];?>" pattern="[0-9]{10}" required />
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>
@@ -138,7 +136,7 @@ $row = mysqli_fetch_array($result)
                     <td><strong>User Name:</strong></td>
                     <td><span id="sprytextfield8">
                       <label>
-                      <input name="txtUser" type="text" id="txtUser" value="<?php echo $row['UserName'];?>" />
+                      <input name="txtUser" type="text" id="txtUser" value="<?php echo $row['UserName'];?>" pattern="[A-Za-z ]+" required />
                       </label>
                     <span class="textfieldRequiredMsg">A value is required.</span></span></td>
                   </tr>

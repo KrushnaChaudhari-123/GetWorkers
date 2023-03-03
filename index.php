@@ -26,9 +26,8 @@ if(isset($_SESSION['$UserName_emp'])){
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/getworker3.css" />
+    
     <style type="text/css">
 <!--
 .style1 {
@@ -88,11 +87,11 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Get Worker Portal</a></span></h2>
+                <h2><span><a >Get Worker Portal</a></span></h2>
 				<h3><marquee>Welcome User</marquee></h3>
                
 
-              <p align="right"> <img src="design/work.jpg" alt="" width="510" height="300" /></p>
+              <p align="right"> <img src="design/work.jpg" alt="" width="400" height="250" /></p>
               <p class="btn-more box noprint">&nbsp;</p>
           </div> <!-- /article -->
 

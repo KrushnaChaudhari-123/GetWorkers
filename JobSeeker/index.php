@@ -21,9 +21,8 @@ if(isset($_SESSION['$UserName_job'])){
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css3/main3.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css3/jobseekerMain1.css" />
+    
     <style type="text/css">
 <!--
 .style1 {
@@ -79,9 +78,19 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome To Control Panel</a></span></h2>
-               
+                <h2><span><a >Welcome To Control Panel</a></span></h2>
+                <br>
+                <br>
+                <div id="para">
+               <p >- Welcome to the Get Worker Portal.</p>
+                <p>- To ensure that your profile is up-to-date, please follow these steps:</p>
+                <p>- Go to "Edit Profile". </p>
+                <p>- Update your work experience as it is updated.</p>
+                <p>- Update your availability as per your current schedule.</p>
 
+
+
+                </div>
                 
                 <p>&nbsp;</p>
 

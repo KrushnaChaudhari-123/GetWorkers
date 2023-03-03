@@ -23,9 +23,8 @@ else{
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/main2a.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css2a/EmployerProfile2.css" />
+   
     <style type="text/css">
 <!--
 .style1 {
@@ -81,7 +80,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a >Welcome <?php echo $_SESSION['$UserName_emp'];?></a></span></h2>
+                
 <?php
 $ID=$_SESSION['ID'];
 // Establish Connection with Database
@@ -93,40 +92,44 @@ $result = mysqli_query($con,$sql);
 // Loop through each records 
 $row = mysqli_fetch_array($result)
 ?>
-                <table width="100%" border="1" cellspacing="2" cellpadding="2">
-                  <tr>
-                    <td><strong>Company ID:</strong></td>
-                    <td><?php echo $row['EmployerId'];?></td>
-                  </tr>
-                 
-                  <tr>
-                    <td><strong>Contact Person:</strong></td>
-                    <td><?php echo $row['ContactPerson'];?></td>
-                  </tr>
-                 
-                  <tr>
-                    <td><strong>City:</strong></td>
-                    <td><?php echo $row['City'];?></td>
-                  </tr>
                 
+                <table width="100%" border="1" cellspacing="2" cellpadding="2">
+                  
                   <tr>
-                    <td><strong>Mobile:</strong></td>
-                    <td><?php echo $row['Mobile'];?></td>
-                  </tr>
+                      <td><strong>Company ID:</strong></td>
+                      <td><?php echo $row['EmployerId'];?></td>
+                    </tr>
+                   
+                    <tr>
+                      <td><strong>Contact Person:</strong></td>
+                      <td><?php echo $row['ContactPerson'];?></td>
+                    </tr>
+                   
+                    <tr>
+                      <td><strong>City:</strong></td>
+                      <td><?php echo $row['City'];?></td>
+                    </tr>
+                  
+                    <tr>
+                      <td><strong>Mobile:</strong></td>
+                      <td><?php echo $row['Mobile'];?></td>
+                    </tr>
+                   
+                    <tr>
+                      <td><strong>User Name:</strong></td>
+                      <td><?php echo $row['UserName'];?></td>
+                    </tr>
+                    
                  
+                  </table>
+                  
                   <tr>
-                    <td><strong>User Name:</strong></td>
-                    <td><?php echo $row['UserName'];?></td>
-                  </tr>
-                  
-                  
-                </table>
-
-                <tr>
                     <td>&nbsp;</td>
-                    <td><a href="EditProfile.php?EmployerId=<?php echo $row['EmployerId']; ?>"><h3>Edit Profile</h3></a></td>
-                  </tr>
-
+                    <td ><a  href="EditProfile.php?EmployerId=<?php echo $row['EmployerId']; ?>"><h3 >Edit Profile</h3></a></td>
+                  </tr> 
+             
+              
+                  
                 <?php
                 mysqli_close($con);
                 ?>

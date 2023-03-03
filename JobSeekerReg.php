@@ -14,9 +14,8 @@
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/getworker2.css" />
+  
     <style type="text/css">
 <!--
 .style1 {
@@ -458,19 +457,20 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Worker Registration Form</a></span></h2>
+                <h2><span><a>Worker Registration Form</a></span></h2>
                
 
                     <div class="login">
 
                 <form action="JobSeekerInsert.php" method="post" onSubmit="return validateForm(this,arrFormValidation);" enctype="multipart/form-data" id="form2">
-                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr>
                       <td>Worker Name:</td>
                       <td><span id="sprytextfield3">
-                        <label>
-                        <input type="text" name="txtName" id="txtName" placeholder="Enter Name" />
-                        </label>
+					  <label>
+        <input type="text" name="txtName" id="txtName" placeholder="Enter Name" pattern="[A-Za-z ]+" required />
+      </label>
                       <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
                   
@@ -478,7 +478,7 @@ include "menu.php"
                       <td>City:</td>
                       <td><span id="sprytextfield4">
                         <label>
-                        <input type="text" name="txtCity" id="txtCity" placeholder="Enter City" />
+                        <input type="text" name="txtCity" id="txtCity" placeholder="Enter City" pattern="[A-Za-z ]+" required />
                         </label>
                       <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
@@ -487,7 +487,7 @@ include "menu.php"
                       <td>Mobile:</td>
                       <td><span id="sprytextfield6">
                         <label>
-                        <input type="text" name="txtMobile" id="txtMobile" placeholder="Enter Mobile"/>
+                        <input type="text" name="txtMobile" id="txtMobile" placeholder="Enter Mobile" pattern="[0-9]{10}" required/>
                         </label>
                       <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
@@ -517,7 +517,7 @@ include "menu.php"
                       <td>User Name:</td>
                     <td><span id="sprytextfield8">
                         <label>
-                        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name"/>
+                        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name" pattern="[A-Za-z ]+" required/>
                         </label>
                       <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
@@ -541,7 +541,7 @@ include "menu.php"
                       <td>Answer:</td>
                       <td><span id="sprytextfield10">
                         <label>
-                        <input type="text" name="txtAnswer" id="txtAnswer" placeholder="Enter Answer"/>
+                        <input type="text" name="txtAnswer" id="txtAnswer" placeholder="Enter Answer" pattern="[A-Za-z ]+" required/>
                         </label>
                       <span class="textfieldRequiredMsg"></span></span></td>
                     </tr>
@@ -554,6 +554,7 @@ include "menu.php"
                       </label></td>
                     </tr>
                   </table>
+		
                  </form>
               </div>
 
@@ -570,7 +571,9 @@ include "menu.php"
     </div> <!-- /page -->
 
  
-
+	<?php
+include "footer1.php"
+?>
 </div> <!-- /main -->
 
 <script type="text/javascript">
@@ -586,8 +589,6 @@ var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9");
 var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10");
 //-->
 </script>
-<?php 
-include "footer1.php"
-?> 
+
 </body>
 </html>

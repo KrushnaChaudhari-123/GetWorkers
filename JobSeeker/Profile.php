@@ -22,9 +22,8 @@ if(isset($_SESSION['$UserName_job'])){
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css3/main3.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css3/jobseekerMain1.css" />
+ 
     <style type="text/css">
 
 .style1 {
@@ -81,7 +80,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Welcome <?php echo $_SESSION['Name'];?></a></span></h2>
+                <h2><span><a >     Welcome <?php echo $_SESSION['Name'];?></a></span></h2>
                
 <?php
 $ID=$_SESSION['ID'];
@@ -94,8 +93,9 @@ $result = mysqli_query($con,$sql);
 // Loop through each records 
 $row = mysqli_fetch_array($result)
 ?>
-                <div class="table" align="center" >
-                <table  width="80%" border='1' cellspacing="2" cellpadding="2">
+                <div class="table"  >
+                  
+                <table  width="80%"  cellspacing="2" cellpadding="2">
                 <tr >
                     <td><strong>Worker ID:</strong></td>
                     <td><?php echo $row['JobSeekId'];?></td>
@@ -136,7 +136,7 @@ $row = mysqli_fetch_array($result)
 
                                              
                 </table>
-              
+
                 <tr>
                     <td><strong></strong></td>              
                     <td><a href="EditProfileWorker.php?JobSeekId=<?php echo $row['JobSeekId']; ?>" class="article" ><h3> Edit Profile</h3></a></td>

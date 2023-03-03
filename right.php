@@ -15,6 +15,7 @@
                  <h2 align="center">Login</h3> 
 <div class="login">
                 <form name="form1" method="post" action="login.php">
+                 
                   <table width="100%" border="0">
                     <tr>
                       <td><strong>User Name</strong></td>
@@ -55,11 +56,9 @@
                           </div>
                       </label></td>
                     </tr>
-                    <tr>
-                      <td><div align="center"><a href="Forget.php"><strong>Forgot Password? </strong></a></div></td>
-                    </tr>
+                    
                   </table>
-                  
+     
                   <br>
                   <div align="center"><a href="EmployerReg.php"><strong>New Employer? <br> Register Here</strong></a>
                   </div>

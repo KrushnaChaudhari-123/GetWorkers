@@ -9,14 +9,13 @@
     <meta name="author" content="All: ... [Nazev webu - www.url.cz]; e-mail: info@url.cz" />
     <meta name="copyright" content="Design/Code: Vit Dlouhy [Nuvio - www.nuvio.cz]; e-mail: vit.dlouhy@nuvio.cz" />
     
-    <title>JOB PORTAL</title>
+    <title>Get Worker</title>
     <meta name="description" content="..." />
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/main.css" />
-    <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" />
-    <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/getworker1.css" />
+  
     <style type="text/css">
 <!--
 .style1 {

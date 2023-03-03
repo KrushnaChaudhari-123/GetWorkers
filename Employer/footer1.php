@@ -85,7 +85,7 @@
         </div>
         
       <div class="footer-bottom">
-        <p>&copy; 2023 Example Company. All rights reserved.</p>
+        <p>&copy; 2023 Get Worker. All rights reserved.</p>
       </div>
     </div>
   </footer>

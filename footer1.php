@@ -11,7 +11,7 @@
   background-color:#8FB3DE;
   color: #fff;
   width:767px;
-  padding: 30px ;
+  padding: 30px 0;
   height:170px;
 }
 
@@ -85,7 +85,7 @@
         </div>
         
       <div class="footer-bottom">
-        <p>&copy; 2023 Example Company. All rights reserved.</p>
+        <p>&copy; 2023 Get Worker. All rights reserved.</p>
       </div>
     </div>
   </footer>

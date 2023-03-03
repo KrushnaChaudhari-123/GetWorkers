@@ -1,25 +1,32 @@
+
 body {
     border: 0;
     margin: 0;
     padding: 0;
     background: #fef2f6 url("../design/bg.gif") 0 0 repeat-x;
     font: 70%/160% "verdana", sans-serif;
+    color: #192666;
+    _text-align: center;
 }
 
+
+
+/* This is for the table of profile page */
 table {
     display: table;
     border-collapse: collapse;
-    margin: 15px 0;
-    padding: 10px;
-    border: 2px solid #050301;
-    background-color: #f3f6f8;
+    margin: 16px 115px;
+    padding: 0;
+    border: 1px solid #f6b7cd;
     font-size: 100%;
 }
 
+
+/* tr {display:table-row;} */
 th,
 td {
     display: table-cell;
-    border: 1px solid;
+    border: 1px solid #4d6580;
     margin: 0;
     padding: 5px;
     vertical-align: top;
@@ -47,6 +54,7 @@ dd {
 }
 
 
+/* Floating */
 .f-left {
     float: left;
 }
@@ -55,6 +63,7 @@ dd {
     float: right;
 }
 
+/* Text align */
 .t-left {
     text-align: left;
 }
@@ -71,7 +80,7 @@ dd {
     vertical-align: middle;
 }
 
-
+/* .clear {clear:both;} */
 .box {
     min-height: 1px;
     _height: 1px;
@@ -94,13 +103,15 @@ dd {
     display: none;
 }
 
--------------- */ #main {
+/* -----------------...........--------------------------------------------------------------------------------------- */
+
+#main {
     width: 770px;
     margin: 50px auto 0 auto;
     _text-align: left;
 }
 
-
+/* Header */
 #header {
     position: relative;
     width: 770px;
@@ -111,6 +122,7 @@ dd {
     color: #FFF;
 }
 
+/* Header - logo */
 #header #logo {
     position: absolute;
     top: 35px;
@@ -119,10 +131,12 @@ dd {
 }
 
 
+/* Main menu (tabs)-- this is for header-home,profile,logout*/
 #tabs {
     background: #192666;
     margin: 0 5px;
     padding: 10px 0 0 0;
+    _height: 1px;
 }
 
 #tabs ul {
@@ -151,6 +165,14 @@ dd {
 }
 
 
+/* Main menu (tabs - hover) */
+#tabs ul li a:hover {
+    background: url("../design/tab_hover.gif") 0 0 repeat-x;
+    color: #FFF;
+}
+
+
+/* Page (2 columns)  this for backgroud of white table */
 #page {
     width: 100%;
     min-height: 1px;
@@ -158,6 +180,7 @@ dd {
     _height: 1px;
 }
 
+/* Content-- this for the welcome to control pannel and background */
 #content {
     float: center;
     width: 530px;
@@ -166,13 +189,35 @@ dd {
     padding: 0 0 0 20px;
 }
 
+#para {
+    color: rgb(40, 50, 139);
+    clear: both;
+    text-align: left;
+    font-size: 16px;
+    margin: 0px -188px -20px -15px;
+    padding: 30px;
+}
 
+/* Content - article -n this  is for the table content*/
 #content .article {
     color: rgb(40, 50, 139);
     clear: both;
     text-align: center;
     font-size: 15px;
-    margin: 0px;
+    margin: 10px;
     padding: 30px;
     background: url("../design/content_arsticle_bg.jpg") 0 0 no-repeat;
+}
+
+#content .article h2 {
+    margin: 0 -66px 0px 110px;
+    padding: 10px;
+    background: #DEE5FD url("../design/content_title_bg.gif") 0 0 repeat-y;
+    color: #192666;
+}
+
+#content .article h2 span {
+    background: url("../design/ico_list.gif") 0 50% no-repeat;
+    margin-top: 10px;
+    padding-left: 25px;
 }

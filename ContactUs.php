@@ -14,9 +14,8 @@
     <meta name="keywords" content="..." />
     
     <link rel="index" href="./" title="Home" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/main1.css" />
-    <!-- <link rel="stylesheet" media="print" type="text/css" href="./css/print.css" /> -->
-    <!-- <link rel="stylesheet" media="aural" type="text/css" href="./css/aural.css" /> -->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css1/getworker3.css" />
+    
     <style type="text/css">
 <!--
 .style1 {
@@ -74,7 +73,7 @@ include "menu.php"
 
             <!-- Article -->
             <div class="article">
-                <h2><span><a href="#">Contact Us</a></span></h2>
+                <h2><span><a>Contact Us</a></span></h2>
                
 
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
