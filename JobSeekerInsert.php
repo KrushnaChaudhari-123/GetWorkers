@@ -18,31 +18,32 @@
 	$Question=$_POST['cmbQue'];
 	$Answer=$_POST['txtAnswer'];
 	$UserType="JobSeeker";
+	$Availability="Yes";
 	
-	// Establish Connection with MYSQL
+	$query = "SELECT * FROM jobseeker_reg WHERE UserName='$UserName'";
 	$con = mysqli_connect ("localhost","root","","job");
-	// Select Database	mysql_select_db("job", $con);
-	// Specify the query to Insert Record
-//	$sql = "insert into jobSeeker_reg(JobSeekerName,Address,City,Email,Mobile,Qualification,Gender,BirthDate,Resume,Status,UserName,Password,Question,Answer) values(
-//'".$Name."','".$Address."','".$City."','".$Email."',".$Mobile.",'".$Qualification."','".$Gender."',
-//'".$BirthDate."','".$path1."','".$Status."','".$UserName."','".$Password."','".$Question."','".$Answer."')";
+	$result = mysqli_query($con, $query); 
+	if(mysqli_num_rows($result) > 0) { // check if the username already exists in the database
+		echo '<script type="text/javascript">alert("Username already exists. Please choose a different username.");window.location=\'JobSeekerReg.php\';</script>';
+		
+	}
+	else{
+		$sql="insert into jobSeeker_reg(JobSeekerName,City,Mobile,WorkType,BirthDate,UserName,Password,Question,Answer,Availability) VALUES (
+			'$Name','$City','$Mobile','$WorkType','$BirthDate','$UserName','$Password','$Question','$Answer','$Availability')";
+				// execute query
+			
+			var_dump($sql);
+				if(mysqli_query ($con,$sql)){
+			
+			
+			
+					echo '<script type="text/javascript">alert("Registration Completed Succesfully");window.location=\'index.php\';</script>';
+				}
+			
+			
+			mysqli_close ($con);
+	}
 
-$sql="insert into jobSeeker_reg(JobSeekerName,City,Mobile,WorkType,BirthDate,UserName,Password,Question,Answer) VALUES (
-'$Name','$City','$Mobile','$WorkType','$BirthDate','$UserName','$Password','$Question','$Answer'
-
-)";
-	// execute query
-
-var_dump($sql);
-	if(mysqli_query ($con,$sql)){
-
-
-
-        echo '<script type="text/javascript">alert("Registration Completed Succesfully");window.location=\'index.php\';</script>';
-    }
-
-
-mysqli_close ($con);
 
 	// Close The Connection
 

@@ -5,10 +5,9 @@
 <title>Untitled Document</title>
 </head>
 
-<body>
+<body>   
 <?php
-
-	
+    $con = mysqli_connect ("localhost","root","","job");
 	$ContactPerson=$_POST['txtPerson'];
 	$City=$_POST['txtCity'];
 	$Mobile=$_POST['txtMobile'];
@@ -17,8 +16,14 @@
 	$UserType="Employer";
 	$Question=$_POST['cmbQue'];
 	$Answer=$_POST['txtAnswer'];
-	// Establish Connection with MYSQL
-	$con = mysqli_connect ("localhost","root","","job");
+	$query = "SELECT * FROM employer_reg WHERE UserName='$UserName'";
+	$result = mysqli_query($con, $query); // $connection is the database connection object
+
+	if(mysqli_num_rows($result) > 0) { // check if the username already exists in the database
+		echo '<script type="text/javascript">alert("Username already exists. Please choose a different username.");window.location=\'EmployerReg.php\';</script>';
+		
+	}
+	else{
 
 	// Specify the query to Insert Record
 	$sql = "insert into Employer_Reg(ContactPerson,City,Mobile,UserName,Password,Question,Answer) values('".$ContactPerson."','".$City."',".$Mobile.",'".$UserName."','".$Password."','".$Question."','".$Answer."')";
@@ -29,6 +34,10 @@
 	mysqli_close ($con);
 	
 	echo '<script type="text/javascript">alert("Registration Completed Succesfully");window.location=\'index.php\';</script>';
+
+	}
+	
+	
 
 ?>
 </body>

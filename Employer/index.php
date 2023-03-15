@@ -97,11 +97,11 @@ include "menu.php"
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Mobile Number</strong></div></th>
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>WorkType</strong></div></th>
 <th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Experience</strong></div></th>
-<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Available</strong></div></th>
+<th bgcolor="#e5e9ed" class="style3"><div align="left" class="style9 style5 style2"><strong>Available/Available From</strong></div></th>
 </tr>
 <?php
 $con = mysqli_connect("localhost","root","","job");
-$sql = "select * from jobseeker_reg where Availability = 'Yes'";
+$sql = "select * from jobseeker_reg ";
 
 
 
@@ -129,7 +129,15 @@ $Availability=$row['Availability'];
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Mobile;?></strong></div></td>
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $WorkType;?></strong></div></td>
 <td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Experience;?></strong></div></td>
-<td class="style3"><div align="left" class="style9 style5"><strong><?php echo $Availability;?></strong></div></td>
+<?php if ($row['Availability'] == 'Yes'): ?>
+       
+        <td class="style3"><?php echo $row['Availability']; ?></td>
+<?php else: ?>
+   
+        <td class="style3"><?php echo $row['Availability_Date']; ?></td>
+   
+<?php endif; ?>
+
 </tr>
 <?php
 }

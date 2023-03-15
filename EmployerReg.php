@@ -164,19 +164,30 @@ include "menu.php"
                     </tr>
                   
                     <tr>
-                      <td>User Name:</td>
-                    <td><span id="sprytextfield9">
-                        <label>
-                        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name" pattern="[A-Za-z ]+" required />
-                        </label>
-                      <span class="textfieldRequiredMsg"></span></span></td>
-                    </tr>
-                    <tr>
-                      <td>Password:</td>
-                      <td><label><span id="sprytextfield10">
-                        <input type="password" name="txtPassword" id="txtPassword" placeholder="Enter Password"/>
-                      <span class="textfieldRequiredMsg"></span></span></label></td>
-                    </tr>
+  <td>User Name:</td>
+  <td>
+    <span id="sprytextfield9">
+      <label>
+        <input type="text" name="txtUserName" id="txtUserName" placeholder="Enter User Name" pattern="[A-Za-z ]+" required />
+      </label>
+      <span class="textfieldRequiredMsg">User Name is required.</span>
+    </span>
+  </td>
+</tr>
+  <td>Password:</td>
+  <td>
+    <label>
+      <span id="sprytextfield10">
+        <input type="password" name="txtPassword" id="txtPassword" placeholder="Enter Password" 
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+        title="Password must contain at least one number, one uppercase letter, one lowercase letter, and be at least 8 characters long."
+        required />
+        <span class="textfieldRequiredMsg">Password is required.</span>
+      </span>
+    </label>
+  </td>
+</tr>
+
                     <tr>
                       <td>Security Question:</td>
                      <td><select name="cmbQue" id="cmbQue">

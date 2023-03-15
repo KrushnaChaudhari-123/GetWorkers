@@ -129,10 +129,21 @@ $row = mysqli_fetch_array($result)
                     <td><?php echo $row['Experience'];?></td>
                   </tr>
                   
+                  <?php if ($row['Availability'] != 'No'): ?>
                   <tr>
-                    <td><strong>Availibility</strong></td>
-                    <td><?php echo $row['Availability'];?></td>
+                  <td><strong>Availability</strong></td>
+                  <td><?php echo $row['Availability']; ?></td>
                   </tr>
+                  <?php endif; ?>
+                  <?php if ($row['Availability'] == 'No'): ?>
+                  <tr>
+                  <td><strong>Available From</strong></td>
+                   <td><?php echo $row['Availability_Date']; ?></td>
+                   </tr>
+                  <?php endif; ?>
+
+
+
 
                                              
                 </table>
