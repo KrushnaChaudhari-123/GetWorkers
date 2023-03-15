@@ -1,5 +1,4 @@
 
-
 /* * {min-height:1px;} */
 body {
     border: 0;
@@ -176,8 +175,7 @@ dd {
 /* Content-- this for the welcome to control pannel and background */
 #content {
     float: center;
-    width: 530px;
-    _width: 550px;
+    width: 732px;
     margin: 0;
     padding: 0 0 0 20px;
 }
